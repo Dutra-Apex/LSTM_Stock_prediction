@@ -30,3 +30,6 @@ dataset = data.values
 # This will train on 80% of the data that we have
 training_data_len = math.ceil(len(dataset) * .8)
 training_data_len
+
+#Scale the data (good practice to pre process the data before presenting to a Neural Network)
+scaler = MinMaxScaler(feature_range=(0,1))
