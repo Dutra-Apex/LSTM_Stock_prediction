@@ -20,3 +20,6 @@ plt.plot(df['Close'])
 plt.ylabel('Close Price')
 plt.xlabel('Date')
 plt.show()
+
+#Create new dataframe with only close column
+data = df.filter(['Close'])
