@@ -23,3 +23,10 @@ plt.show()
 
 #Create new dataframe with only close column
 data = df.filter(['Close'])
+
+#Converts the dataframe to a numpy array
+dataset = data.values
+#Get the number of rows to train the model on
+# This will train on 80% of the data that we have
+training_data_len = math.ceil(len(dataset) * .8)
+training_data_len
