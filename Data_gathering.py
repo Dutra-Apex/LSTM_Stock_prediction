@@ -33,3 +33,6 @@ training_data_len
 
 #Scale the data (good practice to pre process the data before presenting to a Neural Network)
 scaler = MinMaxScaler(feature_range=(0,1))
+#Computes the min and max values values used on scaler (inclusive)
+# and transform the data accordingly
+scaled_data = scaler.fit_transform(dataset)
