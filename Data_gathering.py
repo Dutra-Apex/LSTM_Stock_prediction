@@ -10,8 +10,7 @@ plt.style.use('fivethirtyeight')
 
 #Pick stock
 df = web.DataReader('AAPL', data_source='yahoo', start='2012-01-01', end='2021-02-01')
-#Show data
-df
+
 
 # Vizualize closing price history
 plt.figure(figsize=(16,8))
