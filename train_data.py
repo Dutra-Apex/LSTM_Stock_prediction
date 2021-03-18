@@ -16,8 +16,6 @@ for i in range(60, len(train_data)):
     print(y_train)
     print()
 
-print(len(y_train), len(x_train))
-
 
 # xtrain contain 60 values, which are use for prediction
 # y train contain the first value after 60, which is the value that we want to predict
