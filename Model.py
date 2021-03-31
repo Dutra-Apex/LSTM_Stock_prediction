@@ -16,3 +16,8 @@ model.add(LSTM(50, return_sequences=True, input_shape=(x_train.shape[1], 1)))
 model.add(LSTM(50, return_sequences=False))
 model.add(Dense(25))
 model.add(Dense(1))
+
+# Compile the model
+model.compile(optimizer='adam', loss='mean_squared_error')
+#Loss function measures how well the model did on training
+#Optimizer builds upon the loss function to improve results
