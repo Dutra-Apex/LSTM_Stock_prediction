@@ -1,5 +1,4 @@
 import math
-import pandas_datareader as web
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
