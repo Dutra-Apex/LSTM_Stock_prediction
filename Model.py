@@ -18,6 +18,6 @@ model.add(Dense(25))
 model.add(Dense(1))
 
 # Compile the model
-model.compile(optimizer='adam', loss='mean_squared_error')
+model.compile(optimizer='adam', loss='mean_squared_error', metrics='accuracy')
 #Loss function measures how well the model did on training
 #Optimizer builds upon the loss function to improve results
