@@ -6,6 +6,7 @@ train_data = scaled_data[0:training_data_len, :]
 
 #Independant variables
 x_train = []
+
 #Dependant variables
 y_train = []
 
