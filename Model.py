@@ -22,3 +22,6 @@ model.add(Dense(1))
 model.compile(optimizer='adam', loss='mean_squared_error', metrics='accuracy')
 #Loss function measures how well the model did on training
 #Optimizer builds upon the loss function to improve results
+
+#Train the model
+model.fit(x_train, y_train, batch_size=1, epochs=1)
