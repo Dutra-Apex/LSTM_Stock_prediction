@@ -26,3 +26,4 @@ model.compile(optimizer='adam', loss='mean_squared_error', metrics='accuracy')
 #Train the model
 model.fit(x_train, y_train, batch_size=1, epochs=1)
 #Batch size is the total number of training samples presetnt in a single batch
+#Epochs are the number of iterations when a entire dataset is passed forward and backward through an LSTM
