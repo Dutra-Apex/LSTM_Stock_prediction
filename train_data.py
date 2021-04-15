@@ -3,6 +3,7 @@
 train_data = scaled_data[0:training_data_len, :]
 
 #Split the data into xtrain and ytrain:
+
 #Independant variables
 x_train = []
 #Dependant variables
