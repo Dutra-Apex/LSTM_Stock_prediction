@@ -13,10 +13,12 @@ y_train = []
 for i in range(60, len(train_data)):
   x_train.append(train_data[i-60:i, 0]) 
   y_train.append(train_data[i,0])
+  
+"""
   if i <= 61:
     print(x_train)
     print(y_train)
-
+"""
 # xtrain contain 60 values, which are use for prediction
 # y train contain the first value after 60, which is the value that we want to predict
 
