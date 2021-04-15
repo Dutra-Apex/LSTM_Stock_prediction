@@ -19,3 +19,6 @@ for i in range(60, len(train_data)):
 
 # xtrain contain 60 values, which are use for prediction
 # y train contain the first value after 60, which is the value that we want to predict
+
+#Convert both train sets to numpy arrays
+x_train, y_train = np.array(x_train), np.array(y_train)
