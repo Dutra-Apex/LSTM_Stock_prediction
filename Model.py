@@ -41,3 +41,6 @@ y_test = dataset[training_data_len:, :]
 
 for i in range(60, len(test_data)):
   x_test.append(test_data[i-60:i, 0])
+  
+#Convert data to a numpy array
+x_test = np.array(x_test)
