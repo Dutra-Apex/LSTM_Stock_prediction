@@ -47,3 +47,29 @@ x_test = np.array(x_test)
 
 # Reshape the data so that it is 3d for LSTM
 x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
+
+#Get the models predicted price values
+predictions = model.predict(x_test)
+#Unscale the values
+predictions = scaler.inverse_transform(predictions)
+# We want predictions to contain the same values as our y_test 
+
+#Get the models predicted price values
+predictions = model.predict(x_test)
+#Unscale the values
+predictions = scaler.inverse_transform(predictions)
+# We want predictions to contain the same values as our y_test 
+
+#Plot the data
+train = data[:training_data_len]
+valid = data[training_data_len:]
+valid['Predictions'] = predictions
+
+plt.figure(figsize=(16,8))
+plt.title('Model')
+plt.xlabel('Date')
+plt.ylabel('Close price')
+plt.plot(train['Close'])
+plt.plot(valid[['Close','Predictions']])
+plt.legend(['Train','Val','Predictions'],loc='lower right')
+plt.show()
