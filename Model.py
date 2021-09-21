@@ -17,7 +17,6 @@ model.add(LSTM(50, return_sequences=False))
 #model.add(Dense(25))
 model.add(Dense(1))
 
-
 # Compile the model
 model.compile(optimizer='adam', loss='mean_squared_error', metrics='accuracy')
 #Loss function measures how well the model did on training
@@ -27,7 +26,6 @@ model.compile(optimizer='adam', loss='mean_squared_error', metrics='accuracy')
 model.fit(x_train, y_train, batch_size=1, epochs=1)
 #Batch size is the total number of training samples presetnt in a single batch
 #Epochs are the number of iterations when a entire dataset is passed forward and backward through an LSTM
-
 
 #Create the test dataset
 #Create a new array containing scaled values from index 1543 to 2003
