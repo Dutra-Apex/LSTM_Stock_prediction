@@ -19,8 +19,10 @@ plt.ylabel('Close Price')
 plt.xlabel('Date')
 plt.show()
 
+
 #Create new dataframe with only close column
 data = df.filter(['Close'])
+
 
 #Converts the dataframe to a numpy array
 dataset = data.values
